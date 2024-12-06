@@ -16,6 +16,7 @@ while current <= target:
 print(f"Количество месяцев:" , months)
 print(f"Итоговый размер вклада: ", current)
 
+#  Задача 2
 
 X0 = float(input("Введите начальную точку: "))
 X1 = float(input("Введите конечную точку: "))
@@ -23,8 +24,10 @@ dX = float(input("Введите шаг: "))
 
 
 x = X0
-#  Задача 2
+
 while x <= X1:
+    if x < 0:
+        z = x**2
     if 0 < x <= 1:
         z = math.sin(x) 
     else:
