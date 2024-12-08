@@ -25,19 +25,23 @@ print("Буква" ,most_common_letter ,"чаще всего начинает с
 
 #Второе задание
 
-line = "Любой текст"
+line = "Любой текстпаdurgvgcc"
 
 
 latin_words = "abcdefghijklmnopqrstuvwxyz"
 russian_words = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
 
-count = 0
+count_russian = 0
+count_latin = 0
 
 for char in line:
-    if char in latin_words or char in russian_words:
-        count += 1
+    if char in latin_words:
+       count_latin += 1
+    elif char in russian_words:
+        count_russian += 1
+        
 
-print("Общее количество строчных латинских и русских букв:" ,count)
+print("Общее количество строчных латинских:" ,count_latin, "и русских букв:",count_russian )
 
 #Третье задание
 

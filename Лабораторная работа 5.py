@@ -8,13 +8,12 @@ target = 1100
 months = 0 
 current = deposit
 
-
 while current <= target:
     current *= (1 + P / 100)
     months += 1 
 
-print(f"Количество месяцев:" , months)
-print(f"Итоговый размер вклада: ", current)
+print("Количество месяцев:" , months)
+print("Итоговый размер вклада: ", current)
 
 #  Задача 2
 
